@@ -34,7 +34,7 @@ wbcd_test_labels <- wbcd[470:569, 1]
 
 # ---------------------------------------
 # Use k = int(sqrt(469)) = 21
-wbcd_test_pred <- knn(train=wbcd_train, test=wbcd_test, cl=wbcd_test_labels,
+wbcd_test_pred <- knn(train=wbcd_train, test=wbcd_test, cl=wbcd_train_labels,
                       k=21)
 # ---------------------------------------
 
